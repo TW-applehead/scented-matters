@@ -6,20 +6,19 @@
     border-radius: 20px 0 0 20px;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px 0px #ccc;
-    min-height: 80px;
     width: max-content;
-    padding: 5px 15px;
+    padding: 5px 30px;
 }
 .button_list a.nav-link {
     text-align: center;
     color: black;
-    padding: 0 10px;
+    padding: unset;
     transition: 0.5s;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 .button_list a.nav-link img {
-    width: 60px;
-    height: 60px;
+    max-width: 10vw;
+    max-height: 10vw;
     transition: 0.5s;
 }
 
