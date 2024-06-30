@@ -1,0 +1,32 @@
+.button_list {
+    position: fixed;
+    right: 0;
+    bottom: 10%;
+    z-index: 999;
+    border-radius: 20px 0 0 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    min-height: 80px;
+    width: max-content;
+    padding: 5px 15px;
+}
+.button_list a.nav-link {
+    text-align: center;
+    color: black;
+    padding: 0 10px;
+    transition: 0.5s;
+    font-size: 1.4rem;
+}
+.button_list a.nav-link img {
+    width: 60px;
+    height: 60px;
+    transition: 0.5s;
+}
+
+.button_list .img-container {
+    max-height: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
