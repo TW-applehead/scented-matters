@@ -1,3 +1,14 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: .5rem;
+}
+
+header .img-container img {
+    max-width: 36vw;
+}
+
 .breadcrumb {
     font-size: 1.8rem;
 }
