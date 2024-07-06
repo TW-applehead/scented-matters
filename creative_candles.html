@@ -4,9 +4,9 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="../../css/style.css" rel="stylesheet">
-    <link href="../../css/navbar.css" rel="stylesheet">
-    <link href="../../css/product_list.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/product_list.css" rel="stylesheet">
     <title>Scented Matters</title>
 </head>
 <body>
@@ -17,11 +17,11 @@
     </header>
     <div class="container">
         <nav class="breadcrumb">
-            <a class="breadcrumb-item" href="../../index.html">分類</a>
+            <a class="breadcrumb-item" href="index.html">分類</a>
             <span class="breadcrumb-item active">造型蠟燭</span>
         </nav>
         <div id="product-list" class="row"></div>
-        <a href="../../index.html" class="my-3">回上一頁</a>
+        <a href="index.html" class="my-3">回上一頁</a>
     </div>
     <div class="navbar">
         <a class="nav-link" href="#">
@@ -36,14 +36,14 @@
 </body>
 
 <script type="module">
-    import { product_list } from '../../js/product_list.js';
+    import { product_list } from './js/product_list.js';
 
     const items =  [
-                    "../images/creative_candles/oreo.jpg,oreo, 80",
-                    "../images/creative_candles/炒泡麵加蛋.jpg,炒泡麵加蛋, 380",
-                    "../images/creative_candles/小熊.jpg,小熊, 150",
-                    "../images/creative_candles/草莓蛋糕.jpg,草莓蛋糕, 420",
-                    "../images/creative_candles/鬆餅冰淇淋.jpg,鬆餅冰淇淋, 420",
+                    "images/creative_candles/oreo.jpg,oreo, 80",
+                    "images/creative_candles/炒泡麵加蛋.jpg,炒泡麵加蛋, 380",
+                    "images/creative_candles/小熊.jpg,小熊, 150",
+                    "images/creative_candles/草莓蛋糕.jpg,草莓蛋糕, 420",
+                    "images/creative_candles/鬆餅冰淇淋.jpg,鬆餅冰淇淋, 420",
                 ];
 
     product_list(items);
