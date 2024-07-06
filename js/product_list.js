@@ -46,5 +46,4 @@ export function product_list(items) {
             $(this).find(".info-window").hide();
         });
     });
-    console.log('js import successfully')
 }
