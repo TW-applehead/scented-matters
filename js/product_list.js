@@ -9,7 +9,7 @@ export function product_list(items) {
         const info_container = document.createElement('div');
         const img_container = document.createElement('div');
         const item_infos = item.split(",");
-        item_container.className  = 'col-6 col-lg-4';
+        item_container.className  = 'col-6 col-lg-4 mb-3';
         info_container.className  = 'info-container';
         img_container.className  = 'img-container';
         const item_img1 = document.createElement('img');
