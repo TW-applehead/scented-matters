@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="img-container mx-auto">
-            <img src="images/logo.jpeg" />
+            <img src="images/icons/logo.jpeg" />
         </div>
     </header>
     <div class="container">
@@ -24,21 +24,20 @@
     </div>
     <div class="navbar">
         <a class="nav-link" href="#">
-            <img src="images/candle.svg" />
+            <img src="images/icons/candle.svg" />
             <p>我要自訂</p>
         </a>
         <a class="nav-link" href="#">
-            <img src="images/shopping_cart.svg" />
+            <img src="images/icons/shopping_cart.svg" />
             <p>購物車</p>
         </a>
     </div>
 </body>
 
 <script>
-    const items =  ["https://fakeimg.pl/400x500/,仙人掌, 300",
-                    "https://fakeimg.pl/400x450/,慵懶熊熊, 300",
-                    "https://fakeimg.pl/400x600/,擴香片, 300",
-                    "https://fakeimg.pl/400x600/,慶生蠟燭, 300",
+    const items =  ["images/container_candles/貓咪杯蠟.jpg,貓咪杯蠟, 400",
+                    "images/仙人掌.jpg,仙人掌, 320",
+                    "images/container_candles/小茶蠟.jpg,小茶蠟, 30",
                 ];
     // 選擇要顯示陣列內容的元素
     const product_list = document.getElementById('product-list');
@@ -46,7 +45,7 @@
     // 將陣列的每個元素新增到 arrayContainer 內
     items.forEach(item => {
         const item_container = document.createElement('div');
-        const button_container = document.createElement('div');
+        const button_container = document.createElement('button');
         const info_container = document.createElement('div');
         const img_container = document.createElement('div');
         const item_infos = item.split(",");

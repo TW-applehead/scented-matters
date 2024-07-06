@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
-    <link href="css/category.css" rel="stylesheet">
+    <link href="css/product_list.css" rel="stylesheet">
     <title>Scented Matters</title>
 </head>
 <body>
@@ -17,9 +17,10 @@
     </header>
     <div class="container">
         <nav class="breadcrumb">
-            <span class="breadcrumb-item active">分類</span>
+            <a class="breadcrumb-item" href="index.html">分類</a>
+            <span class="breadcrumb-item active">慶生蠟燭</span>
         </nav>
-        <div id="category" class="row"></div>
+        <div id="product-list" class="row"></div>
     </div>
     <div class="navbar">
         <a class="nav-link" href="#">
@@ -35,36 +36,36 @@
 
 <script>
     const items =  [
-                    "creative_candles.html,images/creative_candles/鬆餅冰淇淋.jpg,造型蠟燭",
-                    "container_candles.html,images/container_candles/貓咪杯蠟.jpg,容器蠟燭",
-                    "perfumers.html,images/perfumers/天使.jpg,擴香片",
-                    "birthday_candles.html,images/birthday_candles/慶生蠟燭.jpg,慶生蠟燭",
+                    "images/birthday_candles/慶生蠟燭.jpg,慶生蠟燭, 80",
                 ];
     // 選擇要顯示陣列內容的元素
-    const category = document.getElementById('category');
+    const product_list = document.getElementById('product-list');
 
     // 將陣列的每個元素新增到 arrayContainer 內
     items.forEach(item => {
         const item_container = document.createElement('div');
-        const link_container = document.createElement('a');
+        const button_container = document.createElement('button');
         const info_container = document.createElement('div');
         const img_container = document.createElement('div');
         const item_infos = item.split(",");
         item_container.className  = 'col-6 col-lg-4';
-        link_container.href  = item_infos[0];;
         info_container.className  = 'info-container';
         img_container.className  = 'img-container';
         const item_img = document.createElement('img');
         const item_name = document.createElement('p');
-        item_img.src = item_infos[1];
-        item_name.textContent = item_infos[2];
+        const price = document.createElement('p');
+        item_img.src = item_infos[0];
+        item_name.textContent = item_infos[1];
+        price.textContent = item_infos[2];
+        price.className  = 'price';
         info_container.appendChild(item_name);
+        info_container.appendChild(price);
         img_container.appendChild(item_img);
-        link_container.appendChild(img_container);
-        link_container.appendChild(info_container);
-        item_container.appendChild(link_container);
+        button_container.appendChild(img_container);
+        button_container.appendChild(info_container);
+        item_container.appendChild(button_container);
 
-        category.appendChild(item_container);
+        product_list.appendChild(item_container);
     });
 </script>
 </html>
